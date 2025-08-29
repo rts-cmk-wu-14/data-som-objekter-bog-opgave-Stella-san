@@ -1,0 +1,39 @@
+:root {
+    --background: #53583f;
+    --container-background: #747a59;
+    --text-background: #979e74;
+    --text-background-hover: #828a61;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+
+.animal-species {
+    background-color:var(--container-background);
+    padding: 1rem 2rem 1.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.animal {
+    background-color: var(--text-background);
+    margin: 0.5rem 0 0 0.5rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+    /* display: inline; */
+    width: 100%;
+    border-radius: 2rem;
+    transition: 200ms;
+}
+
+.animal:hover {
+    background-color: var(--text-background-hover);
+    cursor: pointer;
+}

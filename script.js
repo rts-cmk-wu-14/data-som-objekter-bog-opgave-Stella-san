@@ -59,13 +59,19 @@ let animalListDiv = document.querySelector(".animal-species")
 
 animals.forEach(animal => {
     let animalDiv = document.createElement("div");
+    animalDiv.classList.add("animal")
     // animalDiv.textContent = animal.name + ', Class:' + animal.class + ', Type:' + animal.type
 
     // Skrevet med template string / template lieral
     animalDiv.textContent = `${animal.name}, Class: ${animal.class}, Type: ${animal.type}`;
-     console.log(animal);
-    
+    console.log(animal);
     animalListDiv.appendChild(animalDiv);
 });
+
+
+// Ekstraopgave 1
+
+// Jeg har oprettet en class til diven : animalDiv.classList.add("animal") : og skal lave noget simple styleing.
+
 
 
