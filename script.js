@@ -25,23 +25,47 @@
 
 
 // Opgave 2
-let person = {
-    firstname: "Rikke",
-    lastname: "Gleerup",
-    age: "19",
-    hometown: "Rønnede",
-    hobbies: ["Tegne", "Spille", "Spejder"],
-    pet: {
-        type: "Kornsno",
-        name: "Apollo"
-    }
-}
+// let person = {
+//     firstname: "Rikke",
+//     lastname: "Gleerup",
+//     age: "19",
+//     hometown: "Rønnede",
+//     hobbies: ["Tegne", "Spille", "Spejder"],
+//     pet: {
+//         type: "Kornsno",
+//         name: "Apollo"
+//     }
+// }
 
-person.hobbies.forEach(function(hobby){
-    console.log(hobby);
-})
+// person.hobbies.forEach(function(hobby){
+//     console.log(hobby);
+// })
 
-console.log(person.pet.type);
-console.log(person.pet.name);
+// console.log(person.pet.type);
+// console.log(person.pet.name);
+
+
+//Opgave 3
+
+let animals = [
+    { name: "Cloaked fairies", class: " Fresh Dragon", type: " Dracones" },
+    { name: "Pixie biters", class: " Fresh Dragon", type: " Dracones" },
+    { name: "Sirens", class: " Aqua Dragons", type: " Dracones" },
+    { name: "Crystal Dragons", class: " Stem Dragons", type: " Dracones" },
+    { name: "Ruin Gardiens", class: " Acient Dragons", type: " Dracones" }
+]
+
+let animalListDiv = document.querySelector(".animal-species")
+
+animals.forEach(animal => {
+    let animalDiv = document.createElement("div");
+    // animalDiv.textContent = animal.name + ', Class:' + animal.class + ', Type:' + animal.type
+
+    // Skrevet med template string / template lieral
+    animalDiv.textContent = `${animal.name}, Class: ${animal.class}, Type: ${animal.type}`;
+     console.log(animal);
+    
+    animalListDiv.appendChild(animalDiv);
+});
 
 
